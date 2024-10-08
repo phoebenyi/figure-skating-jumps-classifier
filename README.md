@@ -23,17 +23,17 @@ As a figure skating and AI/ML enthusiast, I developed a machine learning model u
 
 ## Note: (for curious people :p)
 
-Salchow     -  Backward inside edge
+- Salchow     -  Backward inside edge
 
-Loop        -  Backward outside edge
+- Loop        -  Backward outside edge
 
-Flip        -  Backward inside edge, with toe-pick
+- Flip        -  Backward inside edge, with toe-pick
 
-Lutz        -  Backward outside edge, with toe-pick, landing on the opposite foot
+- Lutz        -  Backward outside edge, with toe-pick, landing on the opposite foot
 
-Toe Loop    -  Backward outside edge, with toe-pick, landing on the same foot
+- Toe Loop    -  Backward outside edge, with toe-pick, landing on the same foot
 
-Axel        -  Forward outside edge, with an additional half rotation in the air (a single Axel consists of one and a half rotation)
+- Axel        -  Forward outside edge, with an additional half rotation in the air (a single Axel consists of one and a half rotation)
 
 
 ## Installation Instructions
