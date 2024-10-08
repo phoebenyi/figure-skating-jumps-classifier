@@ -2,7 +2,7 @@ import json
 import numpy as np
 
 def load_and_preprocess_json(path):
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='ISO-8859-1') as f:
         data = json.load(f)
     # Process the data to extract 3D pose keypoints
     # Assume data['keypoints'] is the part where 3D keypoints are stored
