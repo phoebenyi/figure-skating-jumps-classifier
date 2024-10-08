@@ -15,3 +15,4 @@ if __name__ == "__main__":
     path = "data/data.json"
     preprocessed_data = load_and_preprocess_json(path)
     np.save("data/preprocessed_data.npy", preprocessed_data)
+
