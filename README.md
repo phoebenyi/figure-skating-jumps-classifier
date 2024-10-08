@@ -48,6 +48,8 @@ python3 -m pip install -r requirements.txt
 ## Dataset Information
 FS-Jump3D Dataset provides detailed 3D pose data of skaters performing different jumps and captures key body movements through markerless motion capture technology. This makes it ideal for analyzing complex 3D movements and subtle technical differences between jumps, such as take-off angles, rotation, and landing positions, which are critical for classifying each type of jump accurately.
 
+FS_Jump3D Dataset: https://github.com/ryota-skating/FS-Jump3D
+
 
 ## Running Instructions:
 To preprocess data, train the model, and evaluate it, use the following commands:
