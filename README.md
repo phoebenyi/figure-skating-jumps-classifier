@@ -3,7 +3,7 @@
 ## Project Overview
 Figure Skating Classifier using TensorFlow with Keras 
 
-Project Description:
+## Project Description:
 
 Differentiating between the six figure skating jumps—Toe Loop, Salchow, Loop, Flip, Lutz, and Axel—can be challenging for newcomers to the sport. These jumps are often integrated into fast-paced routines, making visual differentiation even harder.
 
