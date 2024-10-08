@@ -50,4 +50,10 @@ FS-Jump3D Dataset provides detailed 3D pose data of skaters performing different
 
 
 ## Running Instructions:
--
+To preprocess data, train the model, and evaluate it, use the following commands:
+```bash
+python3 src/preprocess_data.py   # Preprocess data
+python3 src/train_model.py        # Train the model
+python3 src/evaluate_model.py     # Evaluate the model
+```
+
