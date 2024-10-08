@@ -14,5 +14,5 @@ def load_and_preprocess_json(path):
 if __name__ == "__main__":
     path = "data/alldata.json"
     preprocessed_data = load_and_preprocess_json(path)
-    np.save("data/preprocessed_data.npy", preprocessed_data)
+    np.save("../data/preprocessed_data.npy", preprocessed_data)
 
