@@ -23,7 +23,7 @@ Rotational Count: Accounting for the number of rotations, such as the Axel jump 
 
 
 
-Note: (for curious people :p)
+## Note: (for curious people :p)
 
 Salchow     -  Backward inside edge
 
