@@ -10,15 +10,15 @@ Differentiating between the six figure skating jumps—Toe Loop, Salchow, Loop, 
 As a figure skating and AI/ML enthusiast, I developed a machine learning model utilizing TensorFlow and Keras to classify these jumps using 3D pose data from the FS-Jump3D dataset.
 
 
-Key differentiating factors include:
+## Key differentiating factors include:
 
-Take-off Method: Identifying if the jump starts from a forward or backward position.
+- Take-off Method: Identifying if the jump starts from a forward or backward position.
 
-Jump Type: Distinguishing between edge jumps (Salchow, Loop) and toe-pick jumps (Flip, Lutz, Toe Loop).
+- Jump Type: Distinguishing between edge jumps (Salchow, Loop) and toe-pick jumps (Flip, Lutz, Toe Loop).
 
-Blade Edge: Noting whether the jump uses the inside or outside blade edge.
+- Blade Edge: Noting whether the jump uses the inside or outside blade edge.
 
-Rotational Count: Accounting for the number of rotations, such as the Axel jump requiring an additional half rotation.
+- Rotational Count: Accounting for the number of rotations, such as the Axel jump requiring an additional half rotation.
 
 
 ## Note: (for curious people :p)
