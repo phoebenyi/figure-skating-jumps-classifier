@@ -1,0 +1,6 @@
+numpy
+tensorflow
+seaborn
+matplotlib
+scikit-learn
+joblib

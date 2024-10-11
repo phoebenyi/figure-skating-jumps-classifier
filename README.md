@@ -3,22 +3,14 @@
 ## Project Overview
 Figure Skating Classifier using TensorFlow with Keras 
 
+
 ## Project Description:
 
 Differentiating between the six figure skating jumps—Toe Loop, Salchow, Loop, Flip, Lutz, and Axel—can be challenging for newcomers to the sport. These jumps are often integrated into fast-paced routines, making visual differentiation even harder.
 
 As a figure skating and AI/ML enthusiast, I developed a machine learning model utilizing TensorFlow and Keras to classify these jumps using 3D pose data from the FS-Jump3D dataset.
 
-
-## Key differentiating factors include:
-
-- Take-off Method: Identifying if the jump starts from a forward or backward position.
-
-- Jump Type: Distinguishing between edge jumps (Salchow, Loop) and toe-pick jumps (Flip, Lutz, Toe Loop).
-
-- Blade Edge: Noting whether the jump uses the inside or outside blade edge.
-
-- Rotational Count: Accounting for the number of rotations, such as the Axel jump requiring an additional half rotation.
+This ML model aims to differentiate between Toe Loop, Salchow, Loop, Flip, Lutz, Axel and Combination jumps.
 
 
 ## Note: (for curious people :p)
@@ -36,6 +28,24 @@ As a figure skating and AI/ML enthusiast, I developed a machine learning model u
 - Axel        -  Forward outside edge, with an additional half rotation in the air (a single Axel consists of one and a half rotation)
 
 
+## Dataset Information
+FS-Jump3D Dataset provides detailed 3D pose data of skaters performing different jumps and captures key body movements through markerless motion capture technology. This makes it ideal for analyzing complex 3D movements and subtle technical differences between jumps, such as take-off angles, rotation, and landing positions, which are critical for classifying each type of jump accurately.
+
+FS-Jump3D Dataset: https://github.com/ryota-skating/FS-Jump3D
+
+
+## Technologies Used
+- TensorFlow: For building and training the 1D Convolutional Neural Network.
+
+- NumPy: For numerical computing and array handling.
+
+- Scikit-learn: For model evaluation and metrics.
+
+- Matplotlib & Seaborn: For data visualization, including plots and charts.
+
+- Joblib: For saving and loading Python objects, such as models.
+
+
 ## Installation Instructions
 To set up the environment, clone this repository and install the required packages:
 
@@ -45,12 +55,6 @@ cd figure-skating-jumps-classifier
 python3 -m pip install -r requirements.txt
 ```
 
-## Dataset Information
-FS-Jump3D Dataset provides detailed 3D pose data of skaters performing different jumps and captures key body movements through markerless motion capture technology. This makes it ideal for analyzing complex 3D movements and subtle technical differences between jumps, such as take-off angles, rotation, and landing positions, which are critical for classifying each type of jump accurately.
-
-FS-Jump3D Dataset: https://github.com/ryota-skating/FS-Jump3D
-
-(Note: I curled and downloaded the data in JSON format before pre-processing it in npy format. As the file size is >100MB, I migrated data/* into Git LFS before pushing onto Github.)
 
 ## Running Instructions:
 To preprocess data, train the model, and evaluate it, use the following commands:
