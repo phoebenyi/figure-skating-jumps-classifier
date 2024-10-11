@@ -46,6 +46,19 @@ FS-Jump3D Dataset: https://github.com/ryota-skating/FS-Jump3D
 - Joblib: For saving and loading Python objects, such as models.
 
 
+## Results
+Test Loss: 0.3238, Test Accuracy: 0.8696
+
+Confusion Matrix:
+
+<img width="500" alt="Classification Report" src="https://github.com/user-attachments/assets/ccc5bb99-b583-440c-9e28-4bbc864fff67">
+
+Classification Report:
+
+<img width="500" alt="Classification Report" src="https://github.com/user-attachments/assets/d323973c-5d08-4dac-887a-3500a290803a">
+
+
+
 ## Installation Instructions
 To set up the environment, clone this repository and install the required packages:
 
