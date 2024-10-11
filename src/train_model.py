@@ -1,20 +1,34 @@
 import numpy as np
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv1D, LSTM, Dense
+from tensorflow import keras
+from tensorflow.keras import layers
+from sklearn.model_selection import train_test_split
 
-def build_model(input_shape):
-    model = Sequential([
-        Conv1D(64, kernel_size=3, activation='relu', input_shape=input_shape),
-        LSTM(128),
-        Dense(6, activation='softmax')  # 6 classes for jumps
-    ])
-    model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-    return model
+# Load preprocessed data
+data = np.load('processed_data.npz')
+X = data['X']
+y = data['y']
 
-if __name__ == "__main__":
-    X_train = np.load("data/preprocessed_data.npy")
-    y_train = ...
+# Reshape data for 1D CNN
+X = X.reshape(X.shape[0], X.shape[1], 1)  # Shape: (samples, features, channels)
 
-    model = build_model((X_train.shape[1], X_train.shape[2]))
-    model.fit(X_train, y_train, epochs=30, batch_size=32)
-    model.save("models/jump_classifier.h5")
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Define the CNN model
+model = keras.Sequential([
+    layers.Conv1D(32, kernel_size=3, activation='relu', input_shape=(X.shape[1], 1)),
+    layers.MaxPooling1D(pool_size=2),
+    layers.Conv1D(64, kernel_size=3, activation='relu'),
+    layers.MaxPooling1D(pool_size=2),
+    layers.Conv1D(128, kernel_size=3, activation='relu'),
+    layers.Flatten(),
+    layers.Dense(128, activation='relu'),
+    layers.Dense(y.shape[1], activation='softmax')  # Output layer for jump classes
+])
+
+# Compile and train the model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+model.fit(X_train, y_train, epochs=20, batch_size=32, validation_split=0.2)
+
+# Save the model
+model.save('jump_classifier_model_cnn.h5')

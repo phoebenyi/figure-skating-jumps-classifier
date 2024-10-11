@@ -1,3 +1,7 @@
 data/*.json filter=lfs diff=lfs merge=lfs -text
 data/json/alldata.json filter=lfs diff=lfs merge=lfs -text
 data/json/*.json filter=lfs diff=lfs merge=lfs -text
+src/jump_classifier_model_cnn.h5 filter=lfs diff=lfs merge=lfs -text
+src/processed_data filter=lfs diff=lfs merge=lfs -text
+npz filter=lfs diff=lfs merge=lfs -text
+src/processed_data.npz filter=lfs diff=lfs merge=lfs -text
