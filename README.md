@@ -1,7 +1,7 @@
 # figure-skating-jumps-classifier
 
 ## Project Overview
-Figure Skating Classifier using TensorFlow with Keras 
+Figure Skating Classifier using TensorFlow 
 
 
 ## Project Description:
