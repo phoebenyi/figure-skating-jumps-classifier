@@ -1,4 +1,6 @@
-# Personal Learning Notes: 🔖
+# Personal Notes: 🔖
+
+## What I learnt during the project 📝
 
 Deep Neural Networks (DNN) and Convolutional Neural Networks (CNN) are both types of neural networks used in deep learning, but they have different architectures and are suited for different types of tasks.
 
