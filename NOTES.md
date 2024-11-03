@@ -1,6 +1,4 @@
-# Personal Learning Notes:
-
-# Deep Neural Networks (DNN) vs Convolutional Neural Networks (CNN)
+# Personal Learning Notes: 🔖
 
 Deep Neural Networks (DNN) and Convolutional Neural Networks (CNN) are both types of neural networks used in deep learning, but they have different architectures and are suited for different types of tasks.
 
@@ -8,7 +6,7 @@ Initially, I decided to build a DNN machine learning model for classifying the 6
 
 Therefore, I decided to build a CNN machine learning model because CNNs work better with handling spatial and sequential data, as they capture local patterns and relationships that DNNs cannot effectively manage without an enormous amount of data. The CNN’s architecture—especially its convolutional and pooling layers—allows it to pick up essential spatial features, making it particularly well-suited for visual and temporal data, like movements in figure skating jumps. In the end, I got a test accuracy of 86.96%.
 
-## Deep Neural Networks (DNN)
+## Deep Neural Networks (DNN) 🔖
 
 ### Architecture:
 A DNN consists of multiple layers of nodes (neurons), including input, hidden, and output layers. Each neuron in a layer is connected to every neuron in the next layer, making it a fully connected network.
@@ -22,7 +20,7 @@ Can easily overfit if not properly regularized.
 Training can be computationally expensive, especially with many layers.
 
 
-## Convolutional Neural Networks (CNN)
+## Convolutional Neural Networks (CNN) 🔖
 
 ### Architecture:
 A CNN is designed specifically for processing structured grid data, such as images. It includes convolutional layers that apply filters (kernels) to the input data, pooling layers to reduce dimensionality, and often fully connected layers at the end.
@@ -40,7 +38,7 @@ DNNs are general-purpose networks that can handle various types of data but may 
 CNNs are specialized for image and spatial data processing, leveraging their architecture to extract spatial features efficiently.
 In conclusion, the choice between a DNN and a CNN depends on the specific application and the nature of the data you are working with. For image-related tasks, CNNs are generally preferred, while DNNs are suitable for more general tasks.
 
-# Filters, Kernels, Layers
+# Filters, Kernels, Layers 🔖
 
 ## Filters/Kernels:
 Definition: A filter, or kernel, is a small matrix (e.g., 3x3, 5x5) that slides, or "convolves," across the input data to detect patterns.
@@ -70,7 +68,7 @@ Convolutional Layers: Apply filters to generate feature maps, capturing local pa
 Pooling Layers: Reduce the size of feature maps, making the network more efficient and translation-invariant.
 Fully Connected Layers: Combine and interpret features for the final output.
 
-# Downsampling:
+# Downsampling: 🔖
 Reducing the size or resolution of data by decreasing the number of samples or pixels while retaining the essential information, which can help improve computational efficiency and performance in various applications.
 
 # Question: Do we Upsample after Downsampling?
@@ -89,7 +87,7 @@ In these cases, the model can effectively extract high-level features through do
 The final output, typically a classification score or a set of bounding boxes, can be derived directly from the downsampled feature maps, making upsampling redundant and potentially adding unnecessary complexity to the model.
 
 
-# Stride:
+# Stride: 🔖
 Definition: Number of pixels by which the filter (or kernel) moves across the input image during the convolution operation. A stride of 2 means that the filter moves two pixels at a time both horizontally and vertically. (but usually in one direction)
 
 ## Example: Effects of Stride of 2:
@@ -99,7 +97,8 @@ Using a stride of 2 effectively reduces the spatial dimensions (height and width
 A larger stride can help capture more abstract features as it emphasizes the most significant features in the image while losing some spatial detail.
 ###  Output Size Calculation:
 When calculating the output size of a convolutional layer with a given stride, the formula can be represented as:
-Output Size=⌊(Input Size−Kernel Size+2×Padding)/Stride⌋+1
+![image](https://github.com/user-attachments/assets/985217c5-24f5-49e3-b6e5-88c082b810d7)
+
 Input Size: The height or width of the input feature map.
 Kernel Size: The height or width of the convolutional filter.
 Padding: The number of pixels added to the input image's border.
