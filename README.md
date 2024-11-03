@@ -1,10 +1,10 @@
 # figure-skating-jumps-classifier
 
-## Project Overview ⛸
+## Project Overview  ⛸
 Figure Skating Classifier using TensorFlow 
 
 
-## Project Description: ⛸
+## Project Description  ⛸
 
 Differentiating between the six figure skating jumps—Toe Loop, Salchow, Loop, Flip, Lutz, and Axel—can be challenging for newcomers to the sport. These jumps are often integrated into fast-paced routines, making visual differentiation even harder.
 
@@ -13,7 +13,7 @@ As a figure skating and AI/ML enthusiast, I developed a CNN machine learning mod
 This ML model aims to differentiate between Toe Loop, Salchow, Loop, Flip, Lutz, Axel and Combination jumps.
 
 
-## Note: (for curious people :p) ⛸
+## Note: (for curious people :p)  ⛸
 
 - Salchow     -  Backward inside edge
 
@@ -28,13 +28,13 @@ This ML model aims to differentiate between Toe Loop, Salchow, Loop, Flip, Lutz,
 - Axel        -  Forward outside edge, with an additional half rotation in the air (a single Axel consists of one and a half rotation)
 
 
-## Dataset Information 🧮
+## Dataset Information   🧮
 FS-Jump3D Dataset provides detailed 3D pose data of skaters performing different jumps and captures key body movements through markerless motion capture technology. This makes it ideal for analyzing complex 3D movements and subtle technical differences between jumps, such as take-off angles, rotation, and landing positions, which are critical for classifying each type of jump accurately.
 
 FS-Jump3D Dataset: https://github.com/ryota-skating/FS-Jump3D
 
 
-## Technologies Used 🎞
+## Technologies Used  🎞
 - TensorFlow: For building and training the 1D Convolutional Neural Network.
 
 - NumPy: For numerical computing and array handling.
@@ -46,7 +46,7 @@ FS-Jump3D Dataset: https://github.com/ryota-skating/FS-Jump3D
 - Joblib: For saving and loading Python objects, such as models.
 
 
-## Results 🎯
+## Results  🎯
 Test Loss: 0.3238, Test Accuracy: 0.8696
 
 Confusion Matrix:
@@ -58,7 +58,7 @@ Classification Report:
 <img width="500" alt="Classification Report" src="https://github.com/user-attachments/assets/d323973c-5d08-4dac-887a-3500a290803a">
 
 
-## Personal Learning Notes: 📝
+## Personal Learning Notes  📝
 
 Deep Neural Networks (DNN) and Convolutional Neural Networks (CNN) are both types of neural networks used in deep learning, but they have different architectures and are suited for different types of tasks.
 
@@ -69,7 +69,7 @@ Therefore, I decided to build a CNN machine learning model because CNNs work bet
 (Read More at NOTES.md)
 
 
-## Installation Instructions: 💻
+## Installation Instructions  💻
 To set up the environment, clone this repository and install the required packages:
 
 ```bash
@@ -79,7 +79,7 @@ python3 -m pip install -r requirements.txt
 ```
 
 
-## Running Instructions: ⌨️
+## Running Instructions  ⌨️
 To preprocess data, train the model, and evaluate it, use the following commands:
 ```bash
 python3 src/preprocess_data.py   # Preprocess data
